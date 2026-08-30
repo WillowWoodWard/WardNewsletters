@@ -1781,7 +1781,22 @@ body { margin: 0; }
   .compact-item {
     grid-template-columns: 58px minmax(0, 1fr);
     gap: 8px;
-    padding: 8px;
+    padding: 10px;
+  }
+  .event-date-chip {
+    min-width: 0;
+    font-size: 0.78rem;
+    padding: 5px 6px;
+  }
+  .event-title { font-size: 0.96rem; line-height: 1.3; }
+  .event-details { font-size: 0.88rem; line-height: 1.4; }
+  .event-meta { font-size: 0.82rem; line-height: 1.35; }
+  .lesson-link-button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 4px 9px;
+    font-size: 0.8rem;
   }
   .calendar-export-actions {
     gap: 10px;
