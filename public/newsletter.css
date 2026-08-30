@@ -1676,3 +1676,99 @@
     font-size: 0.73rem;
   }
 }
+
+/* Online newsletter layout: continuous reading instead of PDF-like page cards. */
+html { background: #f4f7fb; }
+body { margin: 0; }
+.newsletter-preview {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 56px;
+}
+.newsletter-page {
+  width: auto;
+  margin: 0;
+  padding: 28px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none;
+}
+.newsletter-page + .newsletter-page {
+  border-top: 1px solid var(--preview-border);
+}
+.newsletter-page-header {
+  margin-bottom: 18px;
+}
+.newsletter-page-header h1,
+.newsletter-page-header h2 {
+  margin: 0;
+}
+.newsletter-block {
+  scroll-margin-top: 20px;
+}
+.calendar-export-actions a.small-button,
+.lesson-link-button,
+.flyer-preview-card {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+.flyer-preview-card:hover,
+.flyer-preview-card:focus-visible,
+.calendar-export-actions a.small-button:hover,
+.calendar-export-actions a.small-button:focus-visible,
+.lesson-link-button:hover,
+.lesson-link-button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--preview-accent) 45%, transparent);
+  outline-offset: 2px;
+}
+@media (max-width: 700px) {
+  .newsletter-preview {
+    padding: 12px 12px 36px;
+    background: var(--preview-page-bg);
+  }
+  .newsletter-page {
+    padding: 24px 0;
+  }
+  .newsletter-page-header h1 { font-size: 1.65rem; line-height: 1.2; }
+  .newsletter-page-header h2 { font-size: 1.35rem; line-height: 1.25; }
+  .newsletter-block {
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .calendar-columns,
+  .spiritual-box-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .stake-events-calendar-card { grid-column: span 1; }
+  .event-card-item,
+  .compact-item {
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 8px;
+    padding: 8px;
+  }
+  .calendar-export-actions {
+    gap: 10px;
+  }
+  .calendar-export-actions .small-button {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flyer-preview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .flyer-preview-image,
+  .flyer-preview-file { height: 104px; }
+  .birthday-calendar-grid { gap: 2px; }
+  .birthday-calendar-cell {
+    min-height: 48px;
+    padding: 3px;
+  }
+  .birthday-calendar-name { font-size: 0.57rem; }
+  .newsletter-footer { align-items: center; }
+  .newsletter-footer img { max-width: 140px; height: auto; }
+}
