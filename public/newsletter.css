@@ -1753,6 +1753,18 @@ body { margin: 0; }
 .newsletter-block {
   scroll-margin-top: 20px;
 }
+#newsletter-calendars .calendar-columns {
+  display: block;
+  column-count: 3;
+  column-gap: 14px;
+}
+#newsletter-calendars .organization-calendar-card {
+  display: inline-flex;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 14px;
+  break-inside: avoid;
+}
 .calendar-export-actions a.small-button,
 .lesson-link-button,
 .flyer-preview-card {
@@ -1789,6 +1801,14 @@ body { margin: 0; }
   .spiritual-box-grid {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+  #newsletter-calendars .calendar-columns {
+    display: block;
+    column-count: 1;
+  }
+  #newsletter-calendars .organization-calendar-card {
+    display: flex;
+    margin-bottom: 10px;
   }
   .stake-events-calendar-card { grid-column: span 1; }
   .event-card-item,
