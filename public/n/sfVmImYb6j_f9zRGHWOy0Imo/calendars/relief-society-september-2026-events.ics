@@ -5,19 +5,23 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Relief Society - September 2026
 BEGIN:VEVENT
-UID:20260830T221303Z-0-ward-newsletter@local
-DTSTAMP:20260830T221303Z
-DTSTART;VALUE=DATE:20260910
-DTEND;VALUE=DATE:20260911
+UID:20260830T225808Z-0-ward-newsletter@local
+DTSTAMP:20260830T225808Z
+DTSTART:20260910T180000
+DTEND:20260910T200000
 SUMMARY:Stake Relief Society Service Night
-DESCRIPTION:Every 2nd and 4th Thursday
+LOCATION:Stake Center Nursery Room
+DESCRIPTION:Every 2nd and 4th Thursday - Projects for everyone\, including 
+ take-home projects. Contact Shannon Page for more information.
 END:VEVENT
 BEGIN:VEVENT
-UID:20260830T221303Z-1-ward-newsletter@local
-DTSTAMP:20260830T221303Z
-DTSTART;VALUE=DATE:20260924
-DTEND;VALUE=DATE:20260925
+UID:20260830T225808Z-1-ward-newsletter@local
+DTSTAMP:20260830T225808Z
+DTSTART:20260924T180000
+DTEND:20260924T200000
 SUMMARY:Stake Relief Society Service Night
-DESCRIPTION:Every 2nd and 4th Thursday
+LOCATION:Stake Center Nursery Room
+DESCRIPTION:Every 2nd and 4th Thursday - Projects for everyone\, including 
+ take-home projects. Contact Shannon Page for more information.
 END:VEVENT
 END:VCALENDAR

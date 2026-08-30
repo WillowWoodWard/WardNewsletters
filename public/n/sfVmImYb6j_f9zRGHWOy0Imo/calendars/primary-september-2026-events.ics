@@ -5,12 +5,13 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Primary - September 2026
 BEGIN:VEVENT
-UID:20260830T221303Z-0-ward-newsletter@local
-DTSTAMP:20260830T221303Z
+UID:20260830T225808Z-0-ward-newsletter@local
+DTSTAMP:20260830T225808Z
 DTSTART:20260917T180000
 DTEND:20260917T200000
-SUMMARY:Set Your Foundation Activity for those turning 12 years old in 2027
-  will be on Thursday
+SUMMARY:Set Your Foundation Activity
 LOCATION:Willow Farms Church Bowery
+DESCRIPTION:This is for any of the primary kids that will be 12 years old i
+ n 2027
 END:VEVENT
 END:VCALENDAR
