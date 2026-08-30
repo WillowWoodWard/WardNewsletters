@@ -1511,8 +1511,8 @@
   left: 0;
   top: 0;
   transform: translate(-50%, -50%);
-  width: 9px;
-  height: 9px;
+  width: 6px;
+  height: 6px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
 }
