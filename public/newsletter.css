@@ -1779,11 +1779,12 @@ body { margin: 0; }
   .stake-events-calendar-card { grid-column: span 1; }
   .event-card-item,
   .compact-item {
-    grid-template-columns: 58px minmax(0, 1fr);
+    grid-template-columns: 1fr;
     gap: 8px;
     padding: 10px;
   }
   .event-date-chip {
+    justify-self: start;
     min-width: 0;
     font-size: 0.78rem;
     padding: 5px 6px;
@@ -1821,6 +1822,19 @@ body { margin: 0; }
   .birthday-calendar-name { font-size: 0.57rem; }
   .newsletter-footer { align-items: center; }
   .newsletter-footer img { max-width: 140px; height: auto; }
+  .mission-map {
+    overflow: visible;
+    margin-bottom: 136px;
+  }
+  .mission-overlay-legend {
+    top: calc(100% + 10px);
+    right: 0;
+    bottom: auto;
+    left: 0;
+    max-width: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .mission-overlay-title { grid-column: 1 / -1; }
 }
 @media (max-width: 420px) {
   .flyer-preview-grid { grid-template-columns: 1fr; }
