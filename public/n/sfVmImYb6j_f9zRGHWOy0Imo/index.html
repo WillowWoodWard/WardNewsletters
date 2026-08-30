@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
     <title>Willow Wood Ward - September 2026</title>
-    <link rel="stylesheet" href="../../newsletter.css?version=online-v14" />
+    <link rel="stylesheet" href="../../newsletter.css?version=online-v15" />
   </head>
   <body>
     <nav class="published-newsletter-nav" aria-label="Newsletter sections" style="--preview-accent: #e89a2e; --preview-page-bg: #ffffff; --preview-card-bg: #fffaf4; --preview-border: #e6d7c8; --preview-text: #2d3341;">
@@ -49,10 +49,13 @@ Thank you for your faith and dedication as we make this transition together.</p>
         .map((link) => ({ link, section: document.querySelector(link.getAttribute('href')) }))
         .filter((item) => item.section)
       const setActiveSection = (section) => {
-        sections.forEach((item) => item.link.classList.toggle('is-active', item.section === section))
+        const activeItem = sections.find((item) => item.section === section)
+        if (!activeItem || activeItem.link.classList.contains('is-active')) return
+        sections.forEach((item) => item.link.classList.toggle('is-active', item === activeItem))
+        activeItem.link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
       }
       if (sections.length > 0) {
-        setActiveSection(sections[0].section)
+        sections[0].link.classList.add('is-active')
         const observer = new IntersectionObserver((entries) => {
           const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
           if (visible[0]) setActiveSection(visible[0].target)
