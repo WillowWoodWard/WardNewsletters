@@ -1715,6 +1715,14 @@ body { margin: 0; }
   margin: 0 auto;
   padding: 32px 24px 56px;
 }
+.newsletter-preview,
+.newsletter-preview * {
+  min-width: 0;
+}
+.newsletter-preview :is(h1, h2, h3, h4, p, li, a, span) {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .newsletter-page {
   width: auto;
   margin: 0;
