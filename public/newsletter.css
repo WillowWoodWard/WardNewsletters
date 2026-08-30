@@ -1731,6 +1731,10 @@ body { margin: 0; }
   background: transparent !important;
   box-shadow: none;
 }
+.newsletter-page#newsletter-welcome {
+  background: linear-gradient(135deg, #d46b2d 0%, #f1a340 52%, #f8d77c 100%) !important;
+  padding: 32px 24px;
+}
 .newsletter-page + .newsletter-page {
   border-top: 1px solid var(--preview-border);
 }
