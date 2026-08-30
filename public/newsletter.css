@@ -1835,6 +1835,8 @@ body { margin: 0; }
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .mission-overlay-title { grid-column: 1 / -1; }
+  .mission-inline-label,
+  .mission-connector { display: none; }
 }
 @media (max-width: 420px) {
   .flyer-preview-grid { grid-template-columns: 1fr; }
