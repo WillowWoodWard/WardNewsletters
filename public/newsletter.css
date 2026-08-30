@@ -1807,3 +1807,10 @@ body { margin: 0; }
   .newsletter-footer { align-items: center; }
   .newsletter-footer img { max-width: 140px; height: auto; }
 }
+@media (max-width: 420px) {
+  .flyer-preview-grid { grid-template-columns: 1fr; }
+  .flyer-preview-image,
+  .flyer-preview-file { height: 160px; }
+  .calendar-export-actions { flex-direction: column; }
+  .calendar-export-actions .small-button { width: 100%; }
+}
