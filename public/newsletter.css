@@ -810,6 +810,171 @@
   word-break: break-word;
 }
 
+.printer-preview {
+  background: #ffffff;
+}
+
+.printer-preview .newsletter-page,
+.printer-preview .newsletter-block,
+.printer-preview .event-card-item,
+.printer-preview .birthday-calendar-cell,
+.printer-preview .spiritual-box,
+.printer-preview .bulletin-board,
+.printer-preview .bulletin-note {
+  background: #ffffff !important;
+  border-color: #555555 !important;
+  box-shadow: none !important;
+}
+
+.printer-preview .newsletter-page-header,
+.printer-preview .event-date-chip,
+.printer-preview .bulletin-note,
+.printer-preview .mission-overlay-legend {
+  color: #111111 !important;
+}
+
+.printer-preview .event-date-chip {
+  background: #ffffff !important;
+  border-color: #111111 !important;
+}
+
+.printer-preview .newsletter-page {
+  padding: 18px;
+  border: 2px solid #222222;
+  border-radius: 0;
+}
+
+.printer-calendar-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  gap: 16px;
+  align-items: start;
+}
+
+.printer-events-calendar h2,
+.printer-birthdays h2,
+.printer-details-section h2 {
+  margin: 0 0 8px;
+  border-bottom: 2px solid #111111;
+  padding-bottom: 4px;
+  color: #111111;
+  font-size: 1.1rem;
+}
+
+.printer-calendar-weekdays,
+.printer-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.printer-calendar-weekdays {
+  border: 1px solid #555555;
+  border-bottom: 0;
+  background: #e8e8e8;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.printer-calendar-weekdays span {
+  padding: 5px 2px;
+}
+
+.printer-calendar-grid {
+  border-top: 1px solid #555555;
+  border-left: 1px solid #555555;
+}
+
+.printer-calendar-day {
+  min-height: 88px;
+  border-right: 1px solid #555555;
+  border-bottom: 1px solid #555555;
+  padding: 4px;
+  box-sizing: border-box;
+  font-size: 0.58rem;
+}
+
+.printer-calendar-day.is-empty {
+  background: #f5f5f5;
+}
+
+.printer-calendar-day > strong {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 0.72rem;
+}
+
+.printer-calendar-event {
+  margin-top: 3px;
+  border-top: 1px dotted #777777;
+  padding-top: 2px;
+  line-height: 1.15;
+}
+
+.printer-calendar-event b,
+.printer-calendar-event span {
+  display: block;
+}
+
+.printer-birthdays {
+  border: 1px solid #555555;
+  padding: 10px;
+}
+
+.printer-birthdays ul,
+.printer-details-section ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.printer-birthdays li {
+  margin-bottom: 5px;
+  font-size: 0.74rem;
+  line-height: 1.25;
+}
+
+.printer-details-page {
+  display: block;
+}
+
+.printer-bishopric-letter {
+  padding-bottom: 14px;
+  border-bottom: 2px solid #222222;
+}
+
+.printer-page-one-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 16px;
+  margin-top: 16px;
+  align-content: start;
+}
+
+.printer-details-section {
+  min-width: 0;
+}
+
+.printer-page-one-content .printer-lessons {
+  grid-column: 1 / -1;
+}
+
+.printer-details-section li {
+  margin-bottom: 5px;
+  font-size: 0.78rem;
+  line-height: 1.3;
+}
+
+.printer-lesson-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.printer-lesson-columns h3 {
+  margin: 0 0 5px;
+  font-size: 0.82rem;
+}
+
 .newsletter-preview-toolbar {
   max-width: 1020px;
   margin: 0 auto 14px;
