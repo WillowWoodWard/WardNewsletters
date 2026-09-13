@@ -28,7 +28,7 @@ function App() {
               <a className="archive-card" href={newsletter.url} key={newsletter.periodKey}>
                 <div>
                   <div className="archive-card-month">{newsletter.monthLabel}</div>
-                  <h2 className="archive-card-title">{newsletter.monthLabel.replace(/s+d{4}$/, '')}</h2>
+                  <h2 className="archive-card-title">{newsletter.monthLabel.replace(/\s+\d{4}$/, '')}</h2>
                 </div>
                 <div className="archive-card-action">Read newsletter &#8594;</div>
               </a>
