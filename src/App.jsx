@@ -28,7 +28,7 @@ function App() {
         </a>
       </header>
       <main className="archive-main">
-        {!showArchiveList ? <h1 className="archive-title">This Month and Next Month</h1> : null}
+        {!showArchiveList ? <h1 className="archive-title">Archived Newsletters</h1> : null}
         {visibleNewsletters.length > 0 ? (
           <ul className={'archive-list' + (showArchiveList ? ' archive-list-all' : '')} aria-label="Monthly newsletters">
             {visibleNewsletters.map((newsletter) => (
