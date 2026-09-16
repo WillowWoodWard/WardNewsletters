@@ -6,8 +6,17 @@ const newsletters = [{"periodKey":"2026-09","monthLabel":"September 2026","title
 function App() {
   const showArchiveList = new URLSearchParams(window.location.search).get('view') === 'list'
   const publishedNewsletters = newsletters.filter((newsletter) => !newsletter.isComingSoon)
-  const upcomingNewsletter = newsletters.find((newsletter) => newsletter.isComingSoon)
-  const homeNewsletters = [publishedNewsletters[0], upcomingNewsletter].filter(Boolean)
+  const publishedByPeriod = new Map(publishedNewsletters.map((newsletter) => [newsletter.periodKey, newsletter]))
+  const currentDate = new Date()
+  const homeNewsletters = [0, 1].map((monthOffset) => {
+    const periodDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + monthOffset, 1)
+    const periodKey = periodDate.getFullYear() + '-' + String(periodDate.getMonth() + 1).padStart(2, '0')
+    return publishedByPeriod.get(periodKey) ?? {
+      periodKey,
+      monthLabel: periodDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+      isComingSoon: true,
+    }
+  })
   const visibleNewsletters = showArchiveList ? publishedNewsletters : homeNewsletters
 
   return (
@@ -15,12 +24,10 @@ function App() {
       <header className="archive-header">
         <div className="archive-brand">Willow Wood Ward</div>
         <a className="archive-qr-link" href={showArchiveList ? '/WardNewsletters/' : '?view=list'}>
-          {showArchiveList ? 'Current newsletters' : 'View all newsletters'}
+          {showArchiveList ? 'Current months' : 'View All Newsletters'}
         </a>
       </header>
       <main className="archive-main">
-        <h1 className="archive-title">{showArchiveList ? 'All Newsletters' : 'Ward Newsletter Archive'}</h1>
-        <p className="archive-intro">Browse current and past ward newsletters in one place.</p>
         {visibleNewsletters.length > 0 ? (
           <ul className={'archive-list' + (showArchiveList ? ' archive-list-all' : '')} aria-label="Monthly newsletters">
             {visibleNewsletters.map((newsletter) => (
