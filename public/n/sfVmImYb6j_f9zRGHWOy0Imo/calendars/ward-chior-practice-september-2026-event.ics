@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ward Newsletter Generator//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Ward Chior Practice - All organizations
+BEGIN:VEVENT
+UID:20260916T215621Z-0-ward-newsletter@local
+DTSTAMP:20260916T215621Z
+DTSTART:20260906T141500
+DTEND:20260906T150000
+SUMMARY:Ward Chior Practice
+DESCRIPTION:Every Sunday - Special reminder that youth are encouraged to be
+  there!
+END:VEVENT
+END:VCALENDAR

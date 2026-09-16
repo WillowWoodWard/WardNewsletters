@@ -1139,10 +1139,62 @@
   box-shadow: 0 14px 24px rgba(30, 53, 84, 0.08);
 }
 
+.newsletter-page:not(.seasonal-welcome-page)::before {
+  content: var(--season-emoji);
+  display: block;
+  margin: -10px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--preview-border);
+  color: var(--preview-accent);
+  font-size: 1.2rem;
+  line-height: 1;
+  text-align: right;
+}
+
+.printer-preview .newsletter-page::before {
+  display: none;
+}
+
 .newsletter-page-header p {
   margin: 0;
   color: var(--preview-accent);
   font-weight: 700;
+}
+
+.seasonal-welcome-page {
+  overflow: hidden;
+}
+
+.seasonal-decor {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin: -4px 0 14px;
+  padding: 5px 14px;
+  border-top: 1px solid var(--preview-border);
+  border-bottom: 1px solid var(--preview-border);
+  background: transparent;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.seasonal-decor-item {
+  display: inline-block;
+  font-size: 1.65rem;
+  filter: saturate(0.9);
+}
+
+.seasonal-decor-item-1,
+.seasonal-decor-item-3 {
+  transform: rotate(-10deg);
+  font-size: 1.25rem;
+}
+
+.seasonal-decor-item-2 {
+  transform: rotate(8deg);
+  font-size: 1.45rem;
 }
 
 .newsletter-page-header h1,
@@ -1245,14 +1297,25 @@
   margin-top: 14px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 12px;
 }
 
-.newsletter-footer img {
-  border: 1px solid #cdd8e8;
+.survey-link-button {
+  display: inline-block;
+  margin-top: 4px;
+  border: 1px solid var(--preview-accent);
   border-radius: 8px;
-  background: #ffffff;
+  background: var(--preview-accent);
+  color: #ffffff;
+  padding: 8px 14px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.survey-link-button:hover {
+  filter: brightness(0.92);
 }
 
 .calendar-columns {
@@ -1498,6 +1561,19 @@
   overflow-wrap: anywhere;
   word-break: break-word;
   hyphens: auto;
+}
+
+.event-export-button {
+  display: inline-block;
+  margin-top: 4px;
+  border: 1px solid var(--preview-border, #d8dee8);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--preview-accent, #537094);
+  padding: 2px 6px;
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .event-meta {

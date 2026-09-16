@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ward Newsletter Generator//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Ward Choir Singing - All organizations
+BEGIN:VEVENT
+UID:20260916T215621Z-0-ward-newsletter@local
+DTSTAMP:20260916T215621Z
+DTSTART:20260920T103000
+DTEND:20260920T113000
+SUMMARY:Ward Choir Singing
+LOCATION:Church
+DESCRIPTION:They will be singing "A Childs Prayer." Please be there to enjo
+ y the beautiful music!
+END:VEVENT
+END:VCALENDAR
