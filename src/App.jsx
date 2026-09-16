@@ -20,27 +20,31 @@ function App() {
       </header>
       <main className="archive-main">
         <h1 className="archive-title">{showArchiveList ? 'All Newsletters' : 'Ward Newsletter Archive'}</h1>
-        <p className="archive-intro">Every monthly newsletter, gathered in one reliable place. Save this page as your QR code and the address will stay the same as new issues are added.</p>
+        <p className="archive-intro">Browse current and past ward newsletters in one place.</p>
         {visibleNewsletters.length > 0 ? (
-          <section className={'archive-list' + (showArchiveList ? ' archive-list-all' : '')} aria-label="Monthly newsletters">
-            {visibleNewsletters.map((newsletter) => newsletter.isComingSoon ? (
-              <div className="archive-card" key={newsletter.periodKey}>
-                <div>
-                  <div className="archive-card-month">{newsletter.monthLabel}</div>
-                  <h2 className="archive-card-title">Coming soon</h2>
-                </div>
-                <div className="archive-card-action">New issue in progress</div>
-              </div>
-            ) : (
-              <a className="archive-card" href={newsletter.url} key={newsletter.periodKey}>
-                <div>
-                  <div className="archive-card-month">{newsletter.monthLabel}</div>
-                  <h2 className="archive-card-title">{newsletter.monthLabel.replace(/\s+\d{4}$/, '')}</h2>
-                </div>
-                <div className="archive-card-action">Read newsletter &#8594;</div>
-              </a>
+          <ul className={'archive-list' + (showArchiveList ? ' archive-list-all' : '')} aria-label="Monthly newsletters">
+            {visibleNewsletters.map((newsletter) => (
+              <li key={newsletter.periodKey}>
+                {newsletter.isComingSoon ? (
+                  <div className="archive-card">
+                    <div>
+                      <div className="archive-card-month">{newsletter.monthLabel}</div>
+                      <h2 className="archive-card-title">Coming soon</h2>
+                    </div>
+                    <div className="archive-card-action">New issue in progress</div>
+                  </div>
+                ) : (
+                  <a className="archive-card" href={newsletter.url}>
+                    <div>
+                      <div className="archive-card-month">{newsletter.monthLabel}</div>
+                      <h2 className="archive-card-title">{newsletter.monthLabel.replace(/\s+\d{4}$/, '')}</h2>
+                    </div>
+                    <div className="archive-card-action">Read newsletter &#8594;</div>
+                  </a>
+                )}
+              </li>
             ))}
-          </section>
+          </ul>
         ) : <p className="archive-empty">The first newsletter will appear here after it is published.</p>}
       </main>
     </div>
