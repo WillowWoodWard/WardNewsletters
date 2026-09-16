@@ -8,10 +8,8 @@ function App() {
     <div className="archive-shell">
       <header className="archive-header">
         <div className="archive-brand">Willow Wood Ward</div>
-        <a className="archive-qr-link" href="/WardNewsletters/">Newsletter home</a>
       </header>
       <main className="archive-main">
-        <p className="archive-kicker">The ward newsletter archive</p>
         <h1 className="archive-title">Ward Newsletter Archive</h1>
         <p className="archive-intro">Every monthly newsletter, gathered in one reliable place. Save this page as your QR code and the address will stay the same as new issues are added.</p>
         {newsletters.length > 0 ? (
