@@ -22,7 +22,7 @@ function App() {
         <h1 className="archive-title">{showArchiveList ? 'All Newsletters' : 'Ward Newsletter Archive'}</h1>
         <p className="archive-intro">Every monthly newsletter, gathered in one reliable place. Save this page as your QR code and the address will stay the same as new issues are added.</p>
         {visibleNewsletters.length > 0 ? (
-          <section className="archive-list" aria-label="Monthly newsletters">
+          <section className={'archive-list' + (showArchiveList ? ' archive-list-all' : '')} aria-label="Monthly newsletters">
             {visibleNewsletters.map((newsletter) => newsletter.isComingSoon ? (
               <div className="archive-card" key={newsletter.periodKey}>
                 <div>
