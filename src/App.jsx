@@ -4,17 +4,26 @@ import './App.css'
 const newsletters = [{"periodKey":"2026-09","monthLabel":"September 2026","title":"Willow Wood Ward - September 2026","url":"https://willowwoodward.github.io/WardNewsletters/n/sfVmImYb6j_f9zRGHWOy0Imo/"},{"periodKey":"2026-10","monthLabel":"October 2026","isComingSoon":true}]
 
 function App() {
+  const showArchiveList = new URLSearchParams(window.location.search).get('view') === 'list'
+  const publishedNewsletters = newsletters.filter((newsletter) => !newsletter.isComingSoon)
+  const upcomingNewsletter = newsletters.find((newsletter) => newsletter.isComingSoon)
+  const homeNewsletters = [publishedNewsletters[0], upcomingNewsletter].filter(Boolean)
+  const visibleNewsletters = showArchiveList ? publishedNewsletters : homeNewsletters
+
   return (
     <div className="archive-shell">
       <header className="archive-header">
         <div className="archive-brand">Willow Wood Ward</div>
+        <a className="archive-qr-link" href={showArchiveList ? '/WardNewsletters/' : '?view=list'}>
+          {showArchiveList ? 'Current newsletters' : 'View all newsletters'}
+        </a>
       </header>
       <main className="archive-main">
-        <h1 className="archive-title">Ward Newsletter Archive</h1>
+        <h1 className="archive-title">{showArchiveList ? 'All Newsletters' : 'Ward Newsletter Archive'}</h1>
         <p className="archive-intro">Every monthly newsletter, gathered in one reliable place. Save this page as your QR code and the address will stay the same as new issues are added.</p>
-        {newsletters.length > 0 ? (
+        {visibleNewsletters.length > 0 ? (
           <section className="archive-list" aria-label="Monthly newsletters">
-            {newsletters.map((newsletter) => newsletter.isComingSoon ? (
+            {visibleNewsletters.map((newsletter) => newsletter.isComingSoon ? (
               <div className="archive-card" key={newsletter.periodKey}>
                 <div>
                   <div className="archive-card-month">{newsletter.monthLabel}</div>
