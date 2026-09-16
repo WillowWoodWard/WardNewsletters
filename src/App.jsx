@@ -27,7 +27,7 @@ function App() {
           {showArchiveList ? 'Current months' : 'View All Newsletters'}
         </a>
       </header>
-      <main className="archive-main">
+      <main className={'archive-main' + (showArchiveList ? ' archive-main-all' : '')}>
         {!showArchiveList ? <h1 className="archive-title">Archived Newsletters</h1> : null}
         {!showArchiveList ? <p className="archive-intro">New monthly newsletters will appear here as they are published.</p> : null}
         {visibleNewsletters.length > 0 ? (
