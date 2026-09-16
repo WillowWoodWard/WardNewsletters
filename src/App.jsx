@@ -37,18 +37,17 @@ function App() {
                 {newsletter.isComingSoon ? (
                   <div className="archive-card">
                     <div>
-                      <div className="archive-card-month">{newsletter.monthLabel}</div>
-                      <h2 className="archive-card-title">Coming soon</h2>
+                      <h2 className="archive-card-title">{newsletter.monthLabel}</h2>
                     </div>
                     <div className="archive-card-action">New issue in progress</div>
                   </div>
                 ) : (
                   <a className="archive-card" href={newsletter.url}>
+                    <span className="archive-card-index">{newsletter.periodKey.slice(5)}</span>
                     <div>
-                      <div className="archive-card-month">{newsletter.monthLabel}</div>
-                      <h2 className="archive-card-title">{newsletter.monthLabel.replace(/\s+\d{4}$/, '')}</h2>
+                      <h2 className="archive-card-title">{newsletter.monthLabel}</h2>
                     </div>
-                    <div className="archive-card-action">Read newsletter &#8594;</div>
+                    <div className="archive-card-action">View</div>
                   </a>
                 )}
               </div>
