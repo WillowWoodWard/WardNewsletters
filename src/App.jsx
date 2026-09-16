@@ -30,9 +30,9 @@ function App() {
       <main className="archive-main">
         {!showArchiveList ? <h1 className="archive-title">Archived Newsletters</h1> : null}
         {visibleNewsletters.length > 0 ? (
-          <ul className={'archive-list' + (showArchiveList ? ' archive-list-all' : '')} aria-label="Monthly newsletters">
+          <div className={'archive-list' + (showArchiveList ? ' archive-list-all' : '')} aria-label="Monthly newsletters">
             {visibleNewsletters.map((newsletter) => (
-              <li key={newsletter.periodKey}>
+              <div key={newsletter.periodKey}>
                 {newsletter.isComingSoon ? (
                   <div className="archive-card">
                     <div>
@@ -50,9 +50,9 @@ function App() {
                     <div className="archive-card-action">Read newsletter &#8594;</div>
                   </a>
                 )}
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         ) : <p className="archive-empty">The first newsletter will appear here after it is published.</p>}
       </main>
     </div>
