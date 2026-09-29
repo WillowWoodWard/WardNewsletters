@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ward Newsletter Generator//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Youth Morningside with Elder Michael Strong - Young Womens
+BEGIN:VEVENT
+UID:20260929T004334Z-0-ward-newsletter@local
+DTSTAMP:20260929T004334Z
+DTSTART:20261007T073000
+DTEND:20261007T083000
+SUMMARY:Youth Morningside with Elder Michael Strong
+LOCATION:990 N 100 W\, Bountiful\, UT 84010
+DESCRIPTION:It will be at Stone Creek Utah Stake Center which is right acro
+ ss the street from Viewmonth Highschool. Refreshments will be afterwards.
+END:VEVENT
+END:VCALENDAR

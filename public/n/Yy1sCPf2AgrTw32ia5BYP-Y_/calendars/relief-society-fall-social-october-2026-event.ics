@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ward Newsletter Generator//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Relief Society Fall Social - Relief Society
+BEGIN:VEVENT
+UID:20260929T004334Z-0-ward-newsletter@local
+DTSTAMP:20260929T004334Z
+DTSTART:20261001T190000
+DTEND:20261001T200000
+SUMMARY:Relief Society Fall Social
+LOCATION:Ward Cultural Hal
+DESCRIPTION:"Sister to Sister Bingo Night"\nPlease come and join in the fun
+ \, game\, and snacks.  Hope to see you there!
+END:VEVENT
+END:VCALENDAR

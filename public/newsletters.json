@@ -1,13 +1,19 @@
 [
   {
+    "periodKey": "2026-10",
+    "monthLabel": "October 2026",
+    "title": "Willow Wood Ward - October 2026",
+    "url": "https://willowwoodward.github.io/WardNewsletters/n/Yy1sCPf2AgrTw32ia5BYP-Y_/"
+  },
+  {
     "periodKey": "2026-09",
     "monthLabel": "September 2026",
     "title": "Willow Wood Ward - September 2026",
     "url": "https://willowwoodward.github.io/WardNewsletters/n/sfVmImYb6j_f9zRGHWOy0Imo/"
   },
   {
-    "periodKey": "2026-10",
-    "monthLabel": "October 2026",
+    "periodKey": "2026-11",
+    "monthLabel": "November 2026",
     "isComingSoon": true
   }
 ]

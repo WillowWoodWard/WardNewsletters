@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ward Newsletter Generator//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Relief Society - October 2026
+BEGIN:VEVENT
+UID:20260929T004334Z-0-ward-newsletter@local
+DTSTAMP:20260929T004334Z
+DTSTART:20261001T190000
+DTEND:20261001T200000
+SUMMARY:Relief Society Fall Social
+LOCATION:Ward Cultural Hal
+DESCRIPTION:"Sister to Sister Bingo Night"\nPlease come and join in the fun
+ \, game\, and snacks.  Hope to see you there!
+END:VEVENT
+BEGIN:VEVENT
+UID:20260929T004334Z-1-ward-newsletter@local
+DTSTAMP:20260929T004334Z
+DTSTART:20261008T180000
+DTEND:20261008T200000
+SUMMARY:Stake Relief Society Service Night
+LOCATION:Stake Center Nursery Room
+DESCRIPTION:Every 2nd and 4th Thursday - Projects for everyone\, including 
+ take-home projects. Contact Shannon Page for more information.
+END:VEVENT
+BEGIN:VEVENT
+UID:20260929T004334Z-2-ward-newsletter@local
+DTSTAMP:20260929T004334Z
+DTSTART:20261010T190000
+DTEND:20261010T220000
+SUMMARY:Board Game Night
+LOCATION:Chase Lane Building
+DESCRIPTION:What: Relief Society and Elders Quorum Board Game Night\n\nWe’d
+  love to see you there!\n\nPlease see the attached flyer for additional de
+ tails.
+END:VEVENT
+BEGIN:VEVENT
+UID:20260929T004334Z-3-ward-newsletter@local
+DTSTAMP:20260929T004334Z
+DTSTART:20261020T190000
+DTEND:20261020T200000
+SUMMARY:Ward Book Club
+LOCATION:452 W. Fox Court Centerville UT 84014
+DESCRIPTION:Jeanne Wagstaff's home at 7:00pm.  We will be discussing the bo
+ ok "The Kite Runner".  Please come and join us for a fun evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:20260929T004334Z-4-ward-newsletter@local
+DTSTAMP:20260929T004334Z
+DTSTART:20261022T180000
+DTEND:20261022T200000
+SUMMARY:Stake Relief Society Service Night
+LOCATION:Stake Center Nursery Room
+DESCRIPTION:Every 2nd and 4th Thursday - Projects for everyone\, including 
+ take-home projects. Contact Shannon Page for more information.
+END:VEVENT
+END:VCALENDAR

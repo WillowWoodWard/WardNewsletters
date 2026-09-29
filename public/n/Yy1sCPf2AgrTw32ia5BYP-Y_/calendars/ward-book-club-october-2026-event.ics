@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ward Newsletter Generator//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Ward Book Club - Relief Society
+BEGIN:VEVENT
+UID:20260929T004334Z-0-ward-newsletter@local
+DTSTAMP:20260929T004334Z
+DTSTART:20261020T190000
+DTEND:20261020T200000
+SUMMARY:Ward Book Club
+LOCATION:452 W. Fox Court Centerville UT 84014
+DESCRIPTION:Jeanne Wagstaff's home at 7:00pm.  We will be discussing the bo
+ ok "The Kite Runner".  Please come and join us for a fun evening.
+END:VEVENT
+END:VCALENDAR
