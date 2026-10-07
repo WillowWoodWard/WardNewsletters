@@ -5,8 +5,8 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Relief Society - October 2026
 BEGIN:VEVENT
-UID:20260929T004334Z-0-ward-newsletter@local
-DTSTAMP:20260929T004334Z
+UID:20261007T164853Z-0-ward-newsletter@local
+DTSTAMP:20261007T164853Z
 DTSTART:20261001T190000
 DTEND:20261001T200000
 SUMMARY:Relief Society Fall Social
@@ -15,8 +15,8 @@ DESCRIPTION:"Sister to Sister Bingo Night"\nPlease come and join in the fun
  \, game\, and snacks.  Hope to see you there!
 END:VEVENT
 BEGIN:VEVENT
-UID:20260929T004334Z-1-ward-newsletter@local
-DTSTAMP:20260929T004334Z
+UID:20261007T164853Z-1-ward-newsletter@local
+DTSTAMP:20261007T164853Z
 DTSTART:20261008T180000
 DTEND:20261008T200000
 SUMMARY:Stake Relief Society Service Night
@@ -25,8 +25,8 @@ DESCRIPTION:Every 2nd and 4th Thursday - Projects for everyone\, including
  take-home projects. Contact Shannon Page for more information.
 END:VEVENT
 BEGIN:VEVENT
-UID:20260929T004334Z-2-ward-newsletter@local
-DTSTAMP:20260929T004334Z
+UID:20261007T164853Z-2-ward-newsletter@local
+DTSTAMP:20261007T164853Z
 DTSTART:20261010T190000
 DTEND:20261010T220000
 SUMMARY:Board Game Night
@@ -36,8 +36,8 @@ DESCRIPTION:What: Relief Society and Elders Quorum Board Game Night\n\nWe’d
  tails.
 END:VEVENT
 BEGIN:VEVENT
-UID:20260929T004334Z-3-ward-newsletter@local
-DTSTAMP:20260929T004334Z
+UID:20261007T164853Z-3-ward-newsletter@local
+DTSTAMP:20261007T164853Z
 DTSTART:20261020T190000
 DTEND:20261020T200000
 SUMMARY:Ward Book Club
@@ -46,8 +46,8 @@ DESCRIPTION:Jeanne Wagstaff's home at 7:00pm.  We will be discussing the bo
  ok "The Kite Runner".  Please come and join us for a fun evening.
 END:VEVENT
 BEGIN:VEVENT
-UID:20260929T004334Z-4-ward-newsletter@local
-DTSTAMP:20260929T004334Z
+UID:20261007T164853Z-4-ward-newsletter@local
+DTSTAMP:20261007T164853Z
 DTSTART:20261022T180000
 DTEND:20261022T200000
 SUMMARY:Stake Relief Society Service Night
